@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 ContentValues values = new ContentValues();
-                values.put("FullName", "Иванов Иван Иваныч");
+                values.put("FullName", "Петров Иван Петрович");
                 String selection = "ID = " + repository.getStudents()
                         .get(repository.getStudents().size() - 1).getId();
                 database.update("Students", values, selection, null);
